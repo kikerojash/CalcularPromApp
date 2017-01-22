@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_unidad"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="Unidad" />
+
+            <TextView
+                android:id="@+id/txt_info_promedio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnombreTrasciego"
+                android:text="@string/string_info_promedios"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="7dp"
+                android:textStyle="bold" />
+            <!--<TextView-->
+                <!--android:id="@+id/tv_mPromedio1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--style="@style/TextAppearance.AppCompat.Small"-->
+                <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+                <!--android:text="description" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_mPromedio2"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--style="@style/TextAppearance.AppCompat.Small"-->
+                <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+                <!--android:text="description" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_mPromedio3"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--style="@style/TextAppearance.AppCompat.Small"-->
+                <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+                <!--android:text="description" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:textColor="@color/md_light_green_500"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_centerInParent="true"
+            tools:text="+100" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
